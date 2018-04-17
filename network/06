@@ -1,0 +1,7 @@
+Get the complete path of the file that contains the IP address of the DNS server
+you’re using
+
+1. open ITerm
+2. cd private/etc/
+3. find file resolv.conf, it contains the IP address of the DNS server
+you’re using

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ !checkfile.md5 ]
+then $(md5sum /etc/crontab > ./checkfile.md5)
+fi
+
+if [ $(md5sum -c ./checkfile.md5 | grep FAILED) ]
+then 
+mail -s "File was changed" root
+fi
+
+crontab -l > cronfile
+echo "0 0 * * *" >> cronfile 
+crontab cronfile
+rm cronfile

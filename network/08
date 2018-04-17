@@ -1,0 +1,15 @@
+Find the provider of slash16.org
+
+You can use one of the WHOIS services, I used this one
+https://hostadvice.com/tools/whois/
+It showed me that Web Hosting Provider of slash16.org is Amazon Web Services, located in US.
+
+Or you can use terminal:
+nslookup slash16.org
+whois <IP>
+and get this:
+OrgName:        Amazon Technologies Inc.
+Address:        410 Terry Ave N.
+City:           Seattle
+Country:        US
+Ref:            https://whois.arin.net/rest/org/AT-88-Z
